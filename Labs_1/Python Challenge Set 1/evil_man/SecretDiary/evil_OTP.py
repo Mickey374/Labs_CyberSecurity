@@ -12,6 +12,8 @@ msg = input('Your message: ').encode('ASCII')
 
 #Therefore i generate a key with length equal to the message!
 key = [random.randrange(256) for _ in msg]
+for i in key:
+    print(i)
 
 #OTP is PERFECTLY SECURE when len(m)==len(k)! No Way somebody will decrypt my message!
 c = [m ^ k for (m,k ) in zip(msg + seed_enc, key + [0x88]*len(seed_enc))]
@@ -20,3 +22,4 @@ c = [m ^ k for (m,k ) in zip(msg + seed_enc, key + [0x88]*len(seed_enc))]
 with open("deepest_secrets.txt", "wb") as f:
     f.write(bytes(c))
 
+print(len(key))
