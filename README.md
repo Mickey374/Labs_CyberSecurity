@@ -10,5 +10,5 @@ This Repo is for lab sessions of CyberSecurity course at the University of Pisa.
 II
 ## Groups
 Computer Engineering and AIDE
-# Include Credits
+# Credits
 Mike(Michael Asante) and Tess(Tesfaye Yimam)
